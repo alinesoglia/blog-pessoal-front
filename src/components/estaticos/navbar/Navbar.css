@@ -1,0 +1,12 @@
+.cursor{
+    cursor: pointer;
+    color: white;
+}
+
+.hover :hover{
+color: #c037e8 !important;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}

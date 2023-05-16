@@ -1,12 +1,35 @@
 .texto {
     text-align: center;
 }
-  
+
 .alinhamento {
     display: flex;
 }
-  
+
 .outlinedButton {
     border-color: #fff !important;
     color: #fff !important;
+}
+
+.postHover:hover{
+    background-color: #814a93 !important;
+}
+
+.caixa{
+    background-color: #3e258d;
+}
+
+.titulo{
+    color: lightgray !important; 
+    font-weight: bold !important; 
+}
+
+.botao{
+    border-color: white !important; 
+    background-color: #3e258d !important; 
+    color: white !important;
+}
+
+.postagens{
+    background-color: white !important;
 }
