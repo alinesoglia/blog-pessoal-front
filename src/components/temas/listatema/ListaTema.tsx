@@ -19,8 +19,8 @@ function ListaTema() {
         }
     }, [token])
 
-    async function getTema() {
-        await busca("/tema", setTemas, {
+    async function getTemas() {
+        await busca("/temas", setTemas, {
             headers: {
                 "Authorization": token
             }
@@ -28,7 +28,7 @@ function ListaTema() {
     }
 
     useEffect(() => {
-        getTema()
+        getTemas()
     }, [temas.length])
     return (
         <>
@@ -47,7 +47,7 @@ function ListaTema() {
                             <CardActions>
                                 <Box display="flex" justifyContent="center" mb={1.5} >
 
-                                    <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
+                                    <Link to={`/formularioTemas/${tema.id}`} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" className="marginLeft" size='small' color="primary" >
                                                 atualizar
