@@ -1,3 +1,4 @@
+
 .texto {
     text-align: center;
 }
@@ -31,5 +32,6 @@
 }
 
 .postagens{
-    background-color: white !important;
+    background-color: #3e258d !important;
+    min-height: 100%;
 }

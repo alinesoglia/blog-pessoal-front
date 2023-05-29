@@ -1,3 +1,7 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.pagPostagens{
+    background: linear-gradient(275deg, #1a71a490 8%, #ce455e90 89%);
+}

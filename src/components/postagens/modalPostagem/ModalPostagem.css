@@ -6,3 +6,8 @@
     border-color: white !important;
     background-color: white !important;
 }
+
+.btnModal:hover{
+    background-color: #814a93 !important;
+    color: white !important;
+}

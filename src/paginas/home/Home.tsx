@@ -6,6 +6,7 @@ import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostage
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 
 function Home() {
@@ -16,7 +17,16 @@ function Home() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado!")
+            toast.error('Você precisa estar logado!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            })
             navigate("/login")
         }
     }, [token])
@@ -39,7 +49,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://img.freepik.com/free-vector/gradient-lo-fi-illustration_23-2149375747.jpg" alt="" width="500px" height="500px" />
+                    <img src="https://media.tenor.com/wch_imF_RLUAAAAC/lofi.gif" alt="" width="900px" height="550px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />

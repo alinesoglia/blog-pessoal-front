@@ -1,3 +1,11 @@
 .titulo{
-    font-weight: bold;
- }
+    font-weight: bold !important;
+}
+
+.barrinha{
+    background-color: #0c0c0c !important;
+}
+
+.sobre{
+    color: white !important;
+}
